@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wifeasy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="qrcode.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">
+                wifeasy
+            </h1>
+        </header>
+        <section class="steps">
+            <article class="steps__container">
+                <form class="form">
+                    <h2 class="steps__title">
+                        Type your wi-fi password
+                    </h2>
+                    <label class="input__wrapper">
+                        <div class="input__container">
+                            <input type="text" id="value" class="input" placeholder="easypass123">
+                            <div class="input__line"></div>
+                            <span class="input__placeholder">
+                                easypass123
+                            </span>
+                        </div>
+                    </label>
+                    <div class="buttons">
+                        <button class="button" type="submit">
+                            Generate QR Code
+                        </button>
+                    </div>
+                </form>
+            </article>
+            <article class="steps__container">
+                <h2 class="steps__title">
+                    Type your wi-fi password
+                </h2>
+                <div id="qrcode"></div>
+            </article>
+        </section>
+    </div>  
+</body>
+</html>

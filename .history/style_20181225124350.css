@@ -1,0 +1,74 @@
+body {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.input__wrapper {
+    display: block;
+}
+  
+  .input {
+    font-family: "Roboto";
+    background-color: transparent;
+    border: 0;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.13;
+    margin-top: 23px;
+    outline: none;
+    margin-bottom: 5px;
+    position: relative;
+    transition: border 0.125s ease-in-out;
+    width: 100%;
+  }
+  .input::placeholder {
+    color: transparent;
+  }
+
+  .input:placeholder-shown + .input__line::after {
+    width: 0;
+  }
+
+  .input:placeholder-shown ~ .input__placeholder {
+    font-size: 14px;
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+
+  .input__container {
+    position: relative;
+  }
+
+  .input__line {
+    background-color: rgba(102, 102, 102, 0.25);
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .input__line::after {
+    background-color: #00a2b5;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    bottom: 0;
+    width: 100%;
+    transition: width 0.325s ease-in-out;
+  }
+
+  .input__wrapper {
+    display: block;
+  }
+
+  .input__placeholder {
+    font-family: "Roboto";
+    bottom: 8px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.125s ease-in-out;
+  }
